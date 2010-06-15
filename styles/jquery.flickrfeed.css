@@ -1,0 +1,132 @@
+#flickrfeed { height: 375px; padding: 10px 5px; position: relative; width: 325px;  }
+#flickrfeed h3 { margin: 0 0 5px 0; }
+#feeditems { 
+    background-color: #FFFFFF;
+    border: 5px solid #CCCCCC;
+    height: 320px; 
+    position: relative; 
+    width: 320px;
+    -moz-border-radius: 5px;
+}
+#feeditems a { margin: 0; padding: 0; }
+#feeditems img { 
+    background-color: #FFFFFF; 
+    border: 0 none; 
+    margin: 1px; 
+    outline-color: #FFFFFF;
+    outline-style: solid;
+    padding: 1px; 
+    position: absolute;
+    -moz-border-radius: 5px;
+}       
+#feeditems img#img1 { top:0; left:0; }
+#feeditems img#img2 { top:0; left:80px; }
+#feeditems img#img3 { top:0; left:160px; }
+#feeditems img#img4 { top:0; left:240px; }
+#feeditems img#img5 { top:80px; left:0; }
+#feeditems img#img6 { top:80px; left:80px; }
+#feeditems img#img7 { top:80px; left:160px; }
+#feeditems img#img8 { top:80px; left:240px; }
+#feeditems img#img9 { top:160px; left:0; }
+#feeditems img#img10 { top:160px; left:80px; }
+#feeditems img#img11 { top:160px; left:160px; }
+#feeditems img#img12 { top:160px; left:240px; }      
+#feeditems img#img13 { top:240px; left:0; }
+#feeditems img#img14 { top:240px; left:80px; }
+#feeditems img#img15 { top:240px; left:160px; }
+#feeditems img#img16 { top:240px; left:240px; }
+#feeditems #loader { 
+    left: 150px; 
+    margin: 0 auto; 
+    position: absolute;
+    top: 150px; 
+    width: 16px; 
+}
+#feeditems a:hover img,
+#feeditems a:focus img {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 85px;
+    outline: 0;
+    padding: 5px;
+    width: 85px;
+    z-index: 100;
+}
+#feeditems a:hover img#img1, #feeditems a:focus img#img1 { top:-10px; left:-10px; }
+#feeditems a:hover img#img2, #feeditems a:focus img#img2 { top:-10px; left:70px; }
+#feeditems a:hover img#img3, #feeditems a:focus img#img3 { top:-10px; left:150px; }
+#feeditems a:hover img#img4, #feeditems a:focus img#img4 { top:-10px; left:230px; }
+#feeditems a:hover img#img5, #feeditems a:focus img#img5 { top:70px; left:-10px; }
+#feeditems a:hover img#img6, #feeditems a:focus img#img6 { top:70px; left:70px; }
+#feeditems a:hover img#img7, #feeditems a:focus img#img7 { top:70px; left:150px; }
+#feeditems a:hover img#img8, #feeditems a:focus img#img8 { top:70px; left:230px; }
+#feeditems a:hover img#img9, #feeditems a:focus img#img9 { top:150px; left:-10px; }
+#feeditems a:hover img#img10, #feeditems a:focus img#img10 { top:150px; left:70px; }
+#feeditems a:hover img#img11, #feeditems a:focus img#img11 { top:150px; left:150px; }
+#feeditems a:hover img#img12, #feeditems a:focus img#img12 { top:150px; left:230px; }      
+#feeditems a:hover img#img13, #feeditems a:focus img#img13 { top:230px; left:-10px; }
+#feeditems a:hover img#img14, #feeditems a:focus img#img14 { top:230px; left:70px; }
+#feeditems a:hover img#img15, #feeditems a:focus img#img15 { top:230px; left:150px; }
+#feeditems a:hover img#img16, #feeditems a:focus img#img16 { top:230px; left:230px; } 
+#flickrfeed p#moreflickr {
+    font-size: small;
+    margin: 5px 0 0 0; 
+    padding: 0;
+    position: absolute;
+    right: 5px;
+}
+#flickr-pop {
+    background: #FFFFFF;
+    border: 2px solid #000;
+    display: none;
+    height: 19px;
+    font-size: 14px;
+    padding: 0;
+    position: fixed;
+    text-align: center;
+    width: 220px;
+    z-index: 200;
+}
+#flickr-pop.loading {
+    background: #FFFFFF url(../images/ajax-loader-bar.gif) no-repeat center center;
+}
+#flickr-background {
+    background-color: #000;
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 199;
+}
+#flickr-pop #popup-close {
+    background: transparent url(../images/cross-whiteonblack.gif) no-repeat center center;
+    color: #fff;
+    padding-right: 20px;
+    position: absolute;
+    text-decoration: none;
+    text-indent: -9999px;
+    text-transform: uppercase;
+    top: 5px;
+    right: 5px;
+    z-index: 201;
+}
+#flickr-pop #fbnav {
+    background-color: #000000;
+    bottom: 0;
+    font-family: sans-serif;
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    padding: 3px 0;
+    width: 100%;
+}
+#flickr-pop #fprev {
+    border-right: 1px solid #ffffff;
+    color: #ffffff;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+#flickr-pop #fnext { color: #ffffff; }
+#flickr-lightbox-image { border: 0; }
+            
