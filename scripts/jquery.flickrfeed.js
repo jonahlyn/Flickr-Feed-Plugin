@@ -24,9 +24,9 @@
                 url: 'http://api.flickr.com/services/feeds/photos_public.gne',
                 data: 'id=' + settings.uid + '&lang=en-us&format=json&jsoncallback=?',
                 success: function (feed) {
-                    var thumbs = [], fullurls = [], img, i, l, j;
+                    var thumbs = [], fullurls = [], img, i, l = feed.items.length, j;
                     
-                    for (i = 0, l = feed.items.length, j = 1; i < l && i < 16; i += 1, j += 1) {
+                    for (i = 0, j = 1; i < l && i < 16; i += 1, j += 1) {
                         img = feed.items[i].media.m.replace(/^(.*?)_m\.jpg$/, '<a rel="lightbox" href="$1.jpg"><img id="img' + j + '" src="$1_s.jpg" alt="" /></a>');
                         thumbs.push(img);
                         fullurls.push(feed.items[i].link);
