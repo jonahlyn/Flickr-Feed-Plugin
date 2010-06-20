@@ -10,19 +10,19 @@
     $.fn.flickrFeed = function (options) {
      
         var settings = $.extend({
-            uid: "14610894@N03",
-            uname: "jonahlyng"
-        }, options);       
+            id: "14610894@N03",
+            name: "jonahlyng"
+        }, options);
          
-        this.each(function () {
+        return this.each(function () {
             var container = $(this);
             
-            $(this).html('<span id="loader"><img src="images/ajax-loader.gif" /></span>');
+            container.html('<span class="flickr-loader"><img src="images/ajax-loader.gif" /></span>');
             
             $.ajax({
                 type: 'GET',
                 url: 'http://api.flickr.com/services/feeds/photos_public.gne',
-                data: 'id=' + settings.uid + '&lang=en-us&format=json&jsoncallback=?',
+                data: 'id=' + settings.id + '&lang=en-us&format=json&jsoncallback=?',
                 success: function (feed) {
                     var thumbs = [], fullurls = [], img, i, l = feed.items.length, j;
                     
@@ -33,14 +33,14 @@
                     }
                     
                     container.html(thumbs.join(''));
-            
+                },
+                error: function (xhr, error) {
+                    container.html("An error occurred.".error);
                 },
                 dataType: 'jsonp'
             });
 
         });
-
-        return this;
      
     };
  

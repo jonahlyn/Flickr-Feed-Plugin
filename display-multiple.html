@@ -13,7 +13,8 @@
     <script type="text/javascript">
         
         $(function(){
-            $(".flickr-pics").flickrFeed();
+            $("#feeditems1").flickrFeed();
+            $("#feeditems2").flickrFeed({id: "53345145@N00",name: "bootch"});
         });
         
     </script>
@@ -23,8 +24,13 @@
 
       <div class="flickrfeed">
         <h2>My Flickr Feed</h2>
-        <div class="flickr-pics"></div>
+        <div id="feeditems1" class="flickr-pics"></div>
       </div>
+      
+      <div class="flickrfeed">
+        <h2>A Cooler Flickr Feed</h2>
+        <div id="feeditems2" class="flickr-pics"></div>
+      </div>      
       
     </div>
   </body>
